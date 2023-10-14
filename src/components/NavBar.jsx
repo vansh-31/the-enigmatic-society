@@ -45,11 +45,13 @@ const NavBar = () => {
 								id="search-bar"
 								placeholder="Search..."
 								onFocus={(e) => {
+									e.target.parentElement.classList.remove("border-gray-400");
 									e.target.parentElement.classList.add("border-blue-400");
 									e.target.parentElement.classList.add("shadow-md");
 									e.target.parentElement.classList.add("shadow-blue-300");
 								}}
 								onBlur={(e) => {
+									e.target.parentElement.classList.add("border-gray-400");
 									e.target.parentElement.classList.remove("border-blue-400");
 									e.target.parentElement.classList.remove("shadow-md");
 									e.target.parentElement.classList.remove("shadow-blue-300");
