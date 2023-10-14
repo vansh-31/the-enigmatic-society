@@ -1,10 +1,20 @@
 import "./App.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import React, { useContext, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import { AppContext } from "./context/AppContext";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
+import { upcoming_events, past_events } from "./data";
 function App() {
+	const { set_upcoming_events, set_past_events } = useContext(AppContext);
+	useEffect(() => {
+		set_upcoming_events(upcoming_events);
+		set_past_events(past_events);
+	}, []); // eslint-disable-line react-hooks/exhaustive-deps
 	return (
-		<div className="min-h-screen w-full max-w-[100vw] overflow-x-hidden overflow-y-auto">
+		<div className="min-h-screen w-full max-w-[100vw] overflow-hidden">
 			<Routes>
 				<Route path="/" element={<NavBar></NavBar>}>
 					<Route index element={<Home></Home>}></Route>
