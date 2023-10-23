@@ -2,6 +2,8 @@ import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import { PiMagnifyingGlass } from "react-icons/pi";
 import { AiOutlineUser } from "react-icons/ai";
+import HoverText from "./HoverText";
+
 const NavBar = () => {
 	return (
 		<>
@@ -10,38 +12,83 @@ const NavBar = () => {
 					<div className="w-1/4 flex-shrink"></div>
 					<div className="flex justify-center w-2/4 text-lg">
 						<NavLink
-							className="py-6 px-3 text-gray-600 hover:text-gray-800"
+							className="relative py-6 px-3 text-gray-600 hover:text-gray-800"
 							to="/"
 						>
 							Home
 						</NavLink>
 						<NavLink
-							className="py-6 px-3 text-gray-600 hover:text-gray-800"
+							className="relative py-6 px-3 text-gray-600 hover:text-gray-800"
 							to="/"
 						>
 							Events
 						</NavLink>
 						<NavLink
-							className="py-6 px-3 text-gray-600 hover:text-gray-800"
+							className="relative py-6 px-3 text-gray-600 cursor-wait hover:text-gray-800"
 							to="/"
+							onMouseEnter={(e) => {
+								if (e.target.firstElementChild) {
+									e.target.firstElementChild.classList.remove("invisible");
+								} else {
+									e.target.classList.remove("invisible");
+								}
+							}}
+							onMouseLeave={(e) => {
+								if (e.target.firstElementChild) {
+									e.target.firstElementChild.classList.add("invisible");
+								} else {
+									e.target.classList.add("invisible");
+								}
+							}}
 						>
 							Team
+							<HoverText></HoverText>
 						</NavLink>
 						<NavLink
-							className="py-6 px-3 text-gray-600 hover:text-gray-800"
+							className="relative py-6 px-3 text-gray-600 cursor-wait hover:text-gray-800"
 							to="/"
+							onMouseEnter={(e) => {
+								if (e.target.firstElementChild) {
+									e.target.firstElementChild.classList.remove("invisible");
+								} else {
+									e.target.classList.remove("invisible");
+								}
+							}}
+							onMouseLeave={(e) => {
+								if (e.target.firstElementChild) {
+									e.target.firstElementChild.classList.add("invisible");
+								} else {
+									e.target.classList.add("invisible");
+								}
+							}}
 						>
 							Our Story
+							<HoverText></HoverText>
 						</NavLink>
 						<NavLink
-							className="py-6 px-3 text-gray-600 hover:text-gray-800"
+							className="relative py-6 px-3 text-gray-600 cursor-wait hover:text-gray-800"
 							to="/"
+							onMouseEnter={(e) => {
+								if (e.target.firstElementChild) {
+									e.target.firstElementChild.classList.remove("invisible");
+								} else {
+									e.target.classList.remove("invisible");
+								}
+							}}
+							onMouseLeave={(e) => {
+								if (e.target.firstElementChild) {
+									e.target.firstElementChild.classList.add("invisible");
+								} else {
+									e.target.classList.add("invisible");
+								}
+							}}
 						>
 							Gallery
+							<HoverText></HoverText>
 						</NavLink>
 					</div>
 					<div className="flex justify-between items-center text-gray-500 w-1/4 ">
-						<div className="flex p-1 items-center justify-center border-2 border-gray-400 border-opacity-60 rounded-lg w-2/3">
+						<div className="flex p-1 items-center justify-center border-2 border-gray-400 border-opacity-60 rounded-lg w-2/3 invisible">
 							<button className="min-w-[15%] h-full flex justify-center items-center">
 								<PiMagnifyingGlass></PiMagnifyingGlass>
 							</button>
@@ -64,8 +111,22 @@ const NavBar = () => {
 								}}
 							/>
 						</div>
-						<button className="text-3xl text-gray-600 cursor-pointer hover:text-gray-800">
+						<button
+							id="user-icon"
+							className="relative text-3xl text-gray-600 hover:text-gray-800 cursor-wait"
+							onMouseEnter={(e) => {
+								document
+									.getElementById("user-icon")
+									.lastElementChild.classList.remove("invisible");
+							}}
+							onMouseLeave={(e) => {
+								document
+									.getElementById("user-icon")
+									.lastElementChild.classList.add("invisible");
+							}}
+						>
 							<AiOutlineUser></AiOutlineUser>
+							<HoverText></HoverText>
 						</button>
 					</div>
 				</div>
