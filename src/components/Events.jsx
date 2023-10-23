@@ -14,7 +14,7 @@ function NextArrow(props) {
 				width: "50px",
 				height: "50px",
 				position: "absolute",
-				right: "-50px",
+				right: "-5%",
 				opacity: "0.4",
 			}}
 			onClick={onClick}
@@ -33,7 +33,7 @@ function PrevArrow(props) {
 				width: "50px",
 				height: "50px",
 				position: "absolute",
-				right: "-50px",
+				left: "-5%",
 				opacity: "0.4",
 			}}
 			onClick={onClick}
@@ -46,7 +46,7 @@ const Events = ({ events }) => {
 		dots: true,
 		infinite: true,
 		speed: 500,
-		slidesToShow: 4,
+		slidesToShow: 3,
 		slidesToScroll: 1,
 		nextArrow: <NextArrow />,
 		prevArrow: <PrevArrow />,

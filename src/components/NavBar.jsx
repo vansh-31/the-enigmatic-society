@@ -13,6 +13,12 @@ const NavBar = () => {
 							className="py-6 px-3 text-gray-600 hover:text-gray-800"
 							to="/"
 						>
+							Home
+						</NavLink>
+						<NavLink
+							className="py-6 px-3 text-gray-600 hover:text-gray-800"
+							to="/"
+						>
 							Events
 						</NavLink>
 						<NavLink
@@ -36,7 +42,7 @@ const NavBar = () => {
 					</div>
 					<div className="flex justify-between items-center text-gray-500 w-1/4 ">
 						<div className="flex p-1 items-center justify-center border-2 border-gray-400 border-opacity-60 rounded-lg w-2/3">
-							<button className="min-w-[15%] h-full flex justify-center items-center" >
+							<button className="min-w-[15%] h-full flex justify-center items-center">
 								<PiMagnifyingGlass></PiMagnifyingGlass>
 							</button>
 							<input
