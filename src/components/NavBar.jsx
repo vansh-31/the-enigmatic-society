@@ -2,8 +2,7 @@ import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import { PiMagnifyingGlass } from "react-icons/pi";
 import { AiOutlineUser } from "react-icons/ai";
-import HoverText from "./HoverText";
-
+import { Tooltip } from "@chakra-ui/react";
 const NavBar = () => {
 	return (
 		<>
@@ -26,65 +25,38 @@ const NavBar = () => {
 						<NavLink
 							className="relative py-6 px-3 text-gray-600 cursor-wait hover:text-gray-800"
 							to="/"
-							onMouseEnter={(e) => {
-								if (e.target.firstElementChild) {
-									e.target.firstElementChild.classList.remove("invisible");
-								} else {
-									e.target.classList.remove("invisible");
-								}
-							}}
-							onMouseLeave={(e) => {
-								if (e.target.firstElementChild) {
-									e.target.firstElementChild.classList.add("invisible");
-								} else {
-									e.target.classList.add("invisible");
-								}
-							}}
 						>
-							Team
-							<HoverText></HoverText>
+							<Tooltip
+								label="Coming Soon"
+								placement="bottom"
+								aria-label="A tooltip"
+							>
+								Team
+							</Tooltip>
 						</NavLink>
 						<NavLink
 							className="relative py-6 px-3 text-gray-600 cursor-wait hover:text-gray-800"
 							to="/"
-							onMouseEnter={(e) => {
-								if (e.target.firstElementChild) {
-									e.target.firstElementChild.classList.remove("invisible");
-								} else {
-									e.target.classList.remove("invisible");
-								}
-							}}
-							onMouseLeave={(e) => {
-								if (e.target.firstElementChild) {
-									e.target.firstElementChild.classList.add("invisible");
-								} else {
-									e.target.classList.add("invisible");
-								}
-							}}
 						>
-							Our Story
-							<HoverText></HoverText>
+							<Tooltip
+								label="Coming Soon"
+								placement="bottom"
+								aria-label="A tooltip"
+							>
+								Our Story
+							</Tooltip>
 						</NavLink>
 						<NavLink
 							className="relative py-6 px-3 text-gray-600 cursor-wait hover:text-gray-800"
 							to="/"
-							onMouseEnter={(e) => {
-								if (e.target.firstElementChild) {
-									e.target.firstElementChild.classList.remove("invisible");
-								} else {
-									e.target.classList.remove("invisible");
-								}
-							}}
-							onMouseLeave={(e) => {
-								if (e.target.firstElementChild) {
-									e.target.firstElementChild.classList.add("invisible");
-								} else {
-									e.target.classList.add("invisible");
-								}
-							}}
 						>
-							Gallery
-							<HoverText></HoverText>
+							<Tooltip
+								label="Coming Soon"
+								placement="bottom"
+								aria-label="A tooltip"
+							>
+								Gallery
+							</Tooltip>
 						</NavLink>
 					</div>
 					<div className="flex justify-between items-center text-gray-500 w-1/4 ">
@@ -114,19 +86,8 @@ const NavBar = () => {
 						<button
 							id="user-icon"
 							className="relative text-3xl text-gray-600 hover:text-gray-800 cursor-wait"
-							onMouseEnter={(e) => {
-								document
-									.getElementById("user-icon")
-									.lastElementChild.classList.remove("invisible");
-							}}
-							onMouseLeave={(e) => {
-								document
-									.getElementById("user-icon")
-									.lastElementChild.classList.add("invisible");
-							}}
 						>
 							<AiOutlineUser></AiOutlineUser>
-							<HoverText></HoverText>
 						</button>
 					</div>
 				</div>
