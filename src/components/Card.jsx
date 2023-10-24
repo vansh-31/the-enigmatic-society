@@ -1,5 +1,5 @@
 import React from "react";
-const Event = ({ title, description, image }) => {
+const Card = ({ title, description, image }) => {
 	return (
 		<a
 			href="https://9qqirfue454.typeform.com/to/tEQPxFfL"
@@ -15,4 +15,4 @@ const Event = ({ title, description, image }) => {
 	);
 };
 
-export default Event;
+export default Card;

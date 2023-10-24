@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import Event from "./Event";
+import Card from "./Card";
 import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
 
 function NextArrow(props) {
@@ -55,7 +55,7 @@ const Events = ({ events }) => {
 		<div className="w-full">
 			<Slider {...settings}>
 				{events.map((event, index) => (
-					<Event key={index} {...event}></Event>
+					<Card key={index} {...event}></Card>
 				))}
 			</Slider>
 		</div>
