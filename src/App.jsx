@@ -5,6 +5,7 @@ import React, { useContext, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { AppContext } from "./context/AppContext";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Events from "./pages/Events";
 import Event from "./pages/Event";
@@ -24,6 +25,7 @@ function App() {
 					<Route path="/events/:eventName" element={<Event></Event>}></Route>
 				</Route>
 			</Routes>
+			<Footer></Footer>
 		</div>
 	);
 }
