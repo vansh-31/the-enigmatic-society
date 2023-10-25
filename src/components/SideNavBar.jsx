@@ -34,9 +34,17 @@ const SideNavBar = () => {
 			>
 				<DrawerOverlay />
 				<DrawerContent>
-					<DrawerCloseButton size="lg" />
-					<DrawerHeader fontSize="2xl" alignItems="center" alignContent="center">
-						<NavLink to="/" className="flex justify-center items-center" >
+					<DrawerCloseButton size="lg" padding="6" />
+					<DrawerHeader
+						fontSize="2xl"
+						alignItems="center"
+						alignContent="center"
+					>
+						<NavLink
+							to="/"
+							className="flex justify-center items-center"
+							onClick={onClose}
+						>
 							<img
 								src={enigmaBirdLogo}
 								alt="THE ENIGMATIC SOCIETY"
@@ -47,12 +55,17 @@ const SideNavBar = () => {
 					<Divider></Divider>
 					<DrawerBody>
 						<Box fontSize="2xl" textAlign="center" marginY="25px">
-							<NavLink className=" text-gray-600 hover:text-gray-800" to="/">
+							<NavLink
+								className=" text-gray-600 hover:text-gray-800"
+								to="/"
+								onClick={onClose}
+							>
 								Home
 							</NavLink>
 						</Box>
 						<Box fontSize="2xl" textAlign="center" marginY="25px">
 							<NavLink
+							onClick={onClose}
 								className="relative py-6 mx-2 text-gray-600 hover:text-gray-800"
 								to="/events"
 							>
