@@ -8,16 +8,16 @@ const Footer = () => {
 					<h4>About</h4>
 					<ul>
 						<li>
-							<a href="/">Home</a>
+							<a href="/events">Events</a>
 						</li>
 						<li>
-							<a href="/">Shop</a>
+							<a href="/">Team</a>
 						</li>
 						<li>
 							<a href="/">Our Story</a>
 						</li>
 						<li>
-							<a href="/">Blogs</a>
+							<a href="/">Gallery</a>
 						</li>
 					</ul>
 				</div>
@@ -61,14 +61,14 @@ const Footer = () => {
 						<button className="subscribe-button">Subscribe</button>
 					</div>
 				</div>
-				<div className="flex social-icons">
+				<div className="flex gap-x-4 text-3xl">
 					<BsFacebook></BsFacebook>
 					<BsLinkedin></BsLinkedin>
 					<BsTwitter></BsTwitter>
 					<BsInstagram></BsInstagram>
 				</div>
 				<div className="flex copyright">
-					&copy; 2023 HAM, Inc. &bull;
+					&copy; 2023 ENIGMATIC SOCIETY &bull;
 					<a href="/"> Privacy</a> &bull;
 					<a href="/"> Terms</a> &bull;
 					<a href="/"> Sitemap</a>
