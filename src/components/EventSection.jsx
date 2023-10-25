@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { AppContext } from "../context/AppContext";
-import Events from "./Events";
+import Cards from "./Cards";
 import { Tab, Tabs, TabList, TabPanels, TabPanel } from "@chakra-ui/react";
 const EventSection = () => {
 	const { upcoming_events, past_events } = useContext(AppContext);
@@ -15,10 +15,10 @@ const EventSection = () => {
 					</TabList>
 					<TabPanels>
 						<TabPanel>
-							<Events events={upcoming_events}></Events>
+							<Cards events={upcoming_events}></Cards>
 						</TabPanel>
 						<TabPanel>
-							<Events events={past_events}></Events>
+							<Cards events={past_events}></Cards>
 						</TabPanel>
 					</TabPanels>
 				</Tabs>
