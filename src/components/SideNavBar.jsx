@@ -15,6 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { Divider } from "@chakra-ui/react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import enigmaBirdLogo from "../static/images/enigma-bird-logo.png";
 const SideNavBar = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	const btnRef = React.useRef();
@@ -29,20 +30,28 @@ const SideNavBar = () => {
 				placement="left"
 				onClose={onClose}
 				finalFocusRef={btnRef}
-                size="xs"
+				size="xs"
 			>
 				<DrawerOverlay />
 				<DrawerContent>
-					<DrawerCloseButton   size="lg"/>
-					<DrawerHeader fontSize="2xl">THE ENIGMATIC SOCIETY</DrawerHeader>
+					<DrawerCloseButton size="lg" />
+					<DrawerHeader fontSize="2xl" alignItems="center" alignContent="center">
+						<NavLink to="/" className="flex justify-center items-center" >
+							<img
+								src={enigmaBirdLogo}
+								alt="THE ENIGMATIC SOCIETY"
+								className="w-36"
+							/>
+						</NavLink>
+					</DrawerHeader>
 					<Divider></Divider>
 					<DrawerBody>
-						<Box fontSize="2xl" textAlign="center" marginY="30px">
+						<Box fontSize="2xl" textAlign="center" marginY="25px">
 							<NavLink className=" text-gray-600 hover:text-gray-800" to="/">
 								Home
 							</NavLink>
 						</Box>
-						<Box fontSize="2xl" textAlign="center" marginY="30px">
+						<Box fontSize="2xl" textAlign="center" marginY="25px">
 							<NavLink
 								className="relative py-6 mx-2 text-gray-600 hover:text-gray-800"
 								to="/"
@@ -50,7 +59,7 @@ const SideNavBar = () => {
 								Events
 							</NavLink>
 						</Box>
-						<Box fontSize="2xl" textAlign="center" marginY="30px">
+						<Box fontSize="2xl" textAlign="center" marginY="25px">
 							<NavLink
 								className="relative py-6 mx-2 text-gray-600 cursor-wait hover:text-gray-800"
 								to="/"
@@ -64,7 +73,7 @@ const SideNavBar = () => {
 								</Tooltip>
 							</NavLink>
 						</Box>
-						<Box fontSize="2xl" textAlign="center" marginY="30px">
+						<Box fontSize="2xl" textAlign="center" marginY="25px">
 							<NavLink
 								className="relative py-6 mx-2 text-gray-600 cursor-wait hover:text-gray-800"
 								to="/"
@@ -78,7 +87,7 @@ const SideNavBar = () => {
 								</Tooltip>
 							</NavLink>
 						</Box>
-						<Box fontSize="2xl" textAlign="center" marginY="30px">
+						<Box fontSize="2xl" textAlign="center" marginY="25px">
 							<NavLink
 								className="relative py-6 mx-2 text-gray-600 cursor-wait hover:text-gray-800"
 								to="/"

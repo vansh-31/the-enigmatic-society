@@ -11,7 +11,7 @@ const EventSection = () => {
 				<Tabs isFitted isLazy variant="enclosed">
 					<TabList mb="1em">
 						<Tab>Upcoming Events</Tab>
-						<Tab>Past Events</Tab>
+						<Tab isDisabled >Past Events</Tab>
 					</TabList>
 					<TabPanels>
 						<TabPanel>

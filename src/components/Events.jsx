@@ -43,10 +43,10 @@ function PrevArrow(props) {
 
 const Events = ({ events }) => {
 	let settings = {
-		dots: true,
+		dots: false,
 		infinite: true,
 		speed: 500,
-		slidesToShow: 3,
+		slidesToShow: 1,
 		slidesToScroll: 1,
 		nextArrow: <NextArrow />,
 		prevArrow: <PrevArrow />,
