@@ -54,14 +54,14 @@ const SideNavBar = () => {
 						<Box fontSize="2xl" textAlign="center" marginY="25px">
 							<NavLink
 								className="relative py-6 mx-2 text-gray-600 hover:text-gray-800"
-								to="/"
+								to="/events"
 							>
 								Events
 							</NavLink>
 						</Box>
 						<Box fontSize="2xl" textAlign="center" marginY="25px">
-							<NavLink
-								className="relative py-6 mx-2 text-gray-600 cursor-wait hover:text-gray-800"
+							<div
+								className="mx-2 text-gray-600 cursor-wait hover:text-gray-800"
 								to="/"
 							>
 								<Tooltip
@@ -71,11 +71,11 @@ const SideNavBar = () => {
 								>
 									Team
 								</Tooltip>
-							</NavLink>
+							</div>
 						</Box>
 						<Box fontSize="2xl" textAlign="center" marginY="25px">
-							<NavLink
-								className="relative py-6 mx-2 text-gray-600 cursor-wait hover:text-gray-800"
+							<div
+								className="mx-2 text-gray-600 cursor-wait hover:text-gray-800"
 								to="/"
 							>
 								<Tooltip
@@ -85,11 +85,11 @@ const SideNavBar = () => {
 								>
 									Our Story
 								</Tooltip>
-							</NavLink>
+							</div>
 						</Box>
 						<Box fontSize="2xl" textAlign="center" marginY="25px">
-							<NavLink
-								className="relative py-6 mx-2 text-gray-600 cursor-wait hover:text-gray-800"
+							<div
+								className="mx-2 text-gray-600 cursor-wait hover:text-gray-800"
 								to="/"
 							>
 								<Tooltip
@@ -99,7 +99,7 @@ const SideNavBar = () => {
 								>
 									Gallery
 								</Tooltip>
-							</NavLink>
+							</div>
 						</Box>
 					</DrawerBody>
 

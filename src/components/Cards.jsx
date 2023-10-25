@@ -1,8 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
 import Card from "./Card";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
-
 function NextArrow(props) {
 	const { className, style, onClick } = props;
 	return (
@@ -14,8 +15,8 @@ function NextArrow(props) {
 				width: "50px",
 				height: "50px",
 				position: "absolute",
-				right: "-5%",
-				opacity: "0.4",
+				right: "-9%",
+				opacity: "0.5",
 			}}
 			onClick={onClick}
 		/>
@@ -33,21 +34,21 @@ function PrevArrow(props) {
 				width: "50px",
 				height: "50px",
 				position: "absolute",
-				left: "-5%",
-				opacity: "0.4",
+				left: "-9%",
+				opacity: "0.5",
 			}}
 			onClick={onClick}
 		/>
 	);
 }
 
-const Events = ({ events }) => {
-	let settings = {
-		dots: false,
+const Cards = ({ events }) => {
+	const settings = {
+		dots: true,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 1,
-		slidesToScroll: 1,
+		slidesToScroll: 2,
 		nextArrow: <NextArrow />,
 		prevArrow: <PrevArrow />,
 	};
@@ -62,4 +63,4 @@ const Events = ({ events }) => {
 	);
 };
 
-export default Events;
+export default Cards;

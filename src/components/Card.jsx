@@ -1,10 +1,11 @@
 import React from "react";
-import enigmaticFiestaEventImage from "../static/images/enigmatic-fiesta-event.png";
-const Card = ({ title, description, image }) => {
+import { NavLink } from "react-router-dom";
+const Card = ({ title, image }) => {
+	console.log(image);
 	return (
-		<div>
-			<img src={enigmaticFiestaEventImage} alt="" />
-		</div>
+		<NavLink to={`/events/${title}`}>
+			<img src={image} className="w-full" alt="" />
+		</NavLink>
 	);
 };
 

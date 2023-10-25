@@ -27,13 +27,12 @@ const NavBar = () => {
 								</NavLink>
 								<NavLink
 									className="relative py-6 mx-2 text-gray-600 hover:text-gray-800"
-									to="/"
+									to="/events"
 								>
 									Events
 								</NavLink>
-								<NavLink
+								<div
 									className="relative py-6 mx-2 text-gray-600 cursor-wait hover:text-gray-800"
-									to="/"
 								>
 									<Tooltip
 										label="Coming Soon"
@@ -42,8 +41,8 @@ const NavBar = () => {
 									>
 										Team
 									</Tooltip>
-								</NavLink>
-								<NavLink
+								</div>
+								<div
 									className="relative py-6 mx-2 text-gray-600 cursor-wait hover:text-gray-800"
 									to="/"
 								>
@@ -54,8 +53,8 @@ const NavBar = () => {
 									>
 										Our Story
 									</Tooltip>
-								</NavLink>
-								<NavLink
+								</div>
+								<div
 									className="relative py-6 mx-2 text-gray-600 cursor-wait hover:text-gray-800"
 									to="/"
 								>
@@ -66,7 +65,7 @@ const NavBar = () => {
 									>
 										Gallery
 									</Tooltip>
-								</NavLink>
+								</div>
 							</div>
 						</>
 					)}
