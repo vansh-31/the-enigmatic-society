@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       backgroundImage:{
         "hero-section-bg-image":"url('/src/static/images/hero-section-bg-image.jpg')",
+        "hero-section-bg-image-mobile":"url('/src/static/images/hero-section-bg-image-mobile.jpg')",
       }
     },
   },
