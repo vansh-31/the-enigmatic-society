@@ -88,6 +88,9 @@
 // ];
 import enigmaticFiestaCardImage from "./static/images/enigmatic-fiesta-event-card.png";
 import enigmaticFiestaPoster from "./static/images/enigmatic-fiesta-event-poster.png";
+import pinata from "./static/images/pinata.jpg";
+import hurdleRace from "./static/images/hurdle-race.jpg";
+import mystery from "./static/images/mystery.png";
 const upcoming_events = [
 	{
 		title: "enigmatic-fiesta",
@@ -102,14 +105,17 @@ const upcoming_events = [
 			{
 				name: "🪅🎈 Pinata Party 🎈🪅",
 				desc: `Unleash your inner child as you break open the colorful pinatas!  surprises and laughter await you in this thrilling stage. 🍬🥳`,
+				image: pinata,
 			},
 			{
 				name: "🏃‍♂️ Hurdle Race 🏃‍♀️",
 				desc: `Gear up for an adrenaline-pumping obstacle race! Navigate through hurdles and conquer challenges with your partner. Who will emerge as the ultimate hurdle-busting duo? 🏅💨`,
+				image: hurdleRace,
 			},
 			{
 				name: "🎇 Grand Finale 🎇",
 				desc: `The climax of the Enigmatic Fiesta! A dazzling showcase of talent, mystery, and entertainment. Witness jaw-dropping performances, and be ready for a few surprises. 🌟✨`,
+				image: mystery,
 			},
 		],
 		cardImage: enigmaticFiestaCardImage,
