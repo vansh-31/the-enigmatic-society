@@ -18,7 +18,7 @@ function App() {
 	}, []); // eslint-disable-line react-hooks/exhaustive-deps
 	return (
 		<>
-			<div className="min-h-screen w-full max-w-[100vw] overflow-hidden">
+			<div className="relative min-h-screen w-full max-w-[100vw] overflow-hidden">
 				<Routes>
 					<Route path="/" element={<NavBar></NavBar>}>
 						<Route index element={<Home></Home>}></Route>
