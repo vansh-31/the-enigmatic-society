@@ -5,7 +5,6 @@ import Loader from "../components/Loader";
 import {
 	Card,
 	CardBody,
-	CardFooter,
 	Heading,
 	Text,
 	Stack,
