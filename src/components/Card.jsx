@@ -1,10 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-const Card = ({ title, image }) => {
-	console.log(image);
+const Card = ({ url, cardImage }) => {
 	return (
-		<NavLink to={`/events/${title}`}>
-			<img src={image} className="w-full" alt="" />
+		<NavLink to={url}>
+			<img src={cardImage} className="w-full" alt="" />
 		</NavLink>
 	);
 };

@@ -17,16 +17,18 @@ function App() {
 		set_past_events(past_events);
 	}, []); // eslint-disable-line react-hooks/exhaustive-deps
 	return (
-		<div className="min-h-screen w-full max-w-[100vw] overflow-hidden">
-			<Routes>
-				<Route path="/" element={<NavBar></NavBar>}>
-					<Route index element={<Home></Home>}></Route>
-					<Route path="/events/" element={<Events></Events>}></Route>
-					<Route path="/events/:eventName" element={<Event></Event>}></Route>
-				</Route>
-			</Routes>
+		<>
+			<div className="min-h-screen w-full max-w-[100vw] overflow-hidden">
+				<Routes>
+					<Route path="/" element={<NavBar></NavBar>}>
+						<Route index element={<Home></Home>}></Route>
+						<Route path="/events/" element={<Events></Events>}></Route>
+						<Route path="/events/:eventName" element={<Event></Event>}></Route>
+					</Route>
+				</Routes>
+			</div>
 			<Footer></Footer>
-		</div>
+		</>
 	);
 }
 
